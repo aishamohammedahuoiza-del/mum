@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mom Birthday Experience</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- LOCK -->
+
+<section id="lock" class="screen active">
+    <h2>🔒 Enter Code</h2>
+    <input id="pass" type="password" placeholder="2506">
+    <button onclick="check()">Unlock</button>
+    <p id="error"></p>
+</section>
+
+<!-- INTRO -->
+
+<section id="intro" class="screen">
+    <h2 id="type"></h2>
+    <button onclick="nextPage()">Start Experience</button>
+</section>
+
+<!-- FUNNY -->
+
+<section class="page">
+    <h2>How strict is Mom?</h2>
+
+```
+<button onclick="setStrict(1)">Mild</button>
+<button onclick="setStrict(2)">Strict</button>
+<button onclick="setStrict(3)">Very Strict</button>
+<button onclick="setStrict(4)">Government Level</button>
+
+<p id="strictResult"></p>
+
+<button onclick="nextPage()">Continue</button>
+```
+
+</section>
+
+<!-- MEMORIES -->
+
+<section class="page">
+    <h2>Memory Wall</h2>
+
+```
+<div class="grid">
+    <div onclick="mem(0)" class="card">Love</div>
+    <div onclick="mem(1)" class="card">Lessons</div>
+    <div onclick="mem(2)" class="card">Chaos</div>
+    <div onclick="mem(3)" class="card">Respect</div>
+</div>
+
+<p id="memText"></p>
+
+<button onclick="nextPage()">Continue</button>
+```
+
+</section>
+
+<!-- HEART -->
+
+<section class="page">
+    <h2>Tap Heart</h2>
+
+```
+<div id="heart" onclick="heart()">❤️</div>
+<p id="heartText"></p>
+
+<button onclick="nextPage()">Continue</button>
+```
+
+</section>
+
+<!-- ENVELOPE -->
+
+<section class="page">
+    <h2>Envelope</h2>
+
+```
+<div id="envelope" onclick="openLetter()">💌 Tap to open</div>
+
+<div id="letter" class="hidden">
+    <p>
+        I don’t always say things right.<br><br>
+
+        But I notice everything.<br><br>
+
+        Your strength.<br>
+        Your sacrifices.<br>
+        Your silence when things are heavy.<br><br>
+
+        I used to think you were just strict.<br>
+        Now I understand you were building me.<br><br>
+
+        Even when I complain… I am still learning from you.
+    </p>
+</div>
+
+<button onclick="nextPage()">Continue</button>
+```
+
+</section>
+
+<!-- FINAL -->
+
+<section class="page">
+    <h2>Final Message</h2>
+
+```
+<p class="final">
+    If I had to choose again…<br><br>
+
+    I would still choose you.<br><br>
+
+    Not because it was easy.<br>
+    But because it made me stronger.<br><br>
+
+    ❤️ Happy Birthday Mom ❤️
+</p>
+```
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

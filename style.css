@@ -1,0 +1,62 @@
+body {
+margin: 0;
+font-family: Arial;
+background: black;
+color: white;
+text-align: center;
+overflow: hidden;
+}
+
+.screen, .page {
+display: none;
+padding: 40px;
+}
+
+.active {
+display: block;
+}
+
+button {
+margin-top: 10px;
+padding: 10px 15px;
+border-radius: 10px;
+border: none;
+background: crimson;
+color: white;
+cursor: pointer;
+}
+
+.grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 10px;
+margin-top: 20px;
+}
+
+.card {
+padding: 15px;
+background: #1a1a1a;
+border-radius: 10px;
+cursor: pointer;
+}
+
+#heart {
+font-size: 80px;
+cursor: pointer;
+}
+
+.hidden {
+display: none;
+}
+
+.final {
+max-width: 600px;
+margin: auto;
+line-height: 1.7;
+}
+
+input {
+padding: 10px;
+border-radius: 8px;
+border: none;
+}
